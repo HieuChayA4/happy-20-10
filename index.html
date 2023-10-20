@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng ngày 20/10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            background-image: url('https://source.unsplash.com/1600x900/?roses'); /* Hình ảnh hoa hồng từ Unsplash */
+            background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ trang */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+            background-attachment: fixed; /* Giữ hình nền cố định khi cuộn trang */
+            color: #ff6600; /* Màu chữ trắng */
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px;
+        }
+        .message {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__bounce">Chúc mừng ngày 20/10 <i class="fas fa-heart"></i></h1>
+    <p class="message"></p>
+    <script>
+        $(document).ready(function() {
+            var options = {
+                strings: ["Chúc mẹ Voi và mẹ Chum luôn luôn vui vẻ, xinh đẹp, kiếm thật nhiều xiền nhé! <3 <3 <3"],
+                typeSpeed: 80, // Tốc độ gõ chữ
+                backSpeed: 40, // Tốc độ xóa chữ
+                backDelay: 900, // Thời gian nghỉ trước khi xóa
+                startDelay: 300, // Thời gian nghỉ trước khi bắt đầu gõ
+                loop: true // Lặp lại
+            };
+            var typed = new Typed(".message", options);
+        });
+    </script>
+</body>
+</html>
